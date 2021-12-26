@@ -1,0 +1,52 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: simple-alert-example
+  profiles:
+    active: dev
+  servlet:
+    multipart:
+      enabled: true
+      file-size-threshold: 0
+      max-file-size: 20MB
+      max-request-size: 100MB
+# mybatis-plus相关配置
+mybatis-plus:
+  # xml扫描，多个目录用逗号或者分号分隔（告诉 Mapper 所对应的 XML 文件位置）
+  mapper-locations: classpath:mybatis/*.xml
+  configuration:
+    # 是否开启自动驼峰命名规则映射:从数据库列名到Java属性驼峰命名的类似映射
+    map-underscore-to-camel-case: true
+    # 如果查询结果中包含空值的列，则 MyBatis 在映射的时候，不会映射这个字段
+    call-setters-on-nulls: true
+    # 这个配置会将执行的sql打印出来，在开发或测试的时候可以用
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+simple:
+  alert:
+    remote:
+      mode: discovery
+#      httpUrl: http://127.0.0.1:8090
+      report: true
+      service-name: simple-alert-remote-spring-boot-web
+ribbon:
+  eureka:
+    enabled: true
+#日志配置
+logging:
+  config: classpath:logging-config.xml
+  level:
+    org:
+      springframework:
+        web: info
+  pattern:
+    #     日志高亮
+    file: '%clr(%d{yyyy-MM-dd HH:mm:ss.SSS}){faint} %clr(%5p) %clr(${PID}){magenta} %clr(---){faint} %clr([%15.15t]){faint} %clr(%-40.40logger{39}){cyan} %clr(:){faint} %m%n%wEx'
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8000/eureka/
+    fetch-registry: true
+  instance:
+    prefer-ip-address: true
+    lease-renewal-interval-in-seconds: 30

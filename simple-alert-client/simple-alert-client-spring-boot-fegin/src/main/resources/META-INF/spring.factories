@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  simple.alert.client.spring.boot.fegin.AlertConfig,\
+  simple.alert.client.spring.boot.fegin.properties.AlertProperties

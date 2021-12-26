@@ -1,0 +1,24 @@
+{
+  "groups": [
+    {
+      "name": "simple.alert.prototype",
+      "type": "simple.alert.client.spring.boot.AlertConfig",
+      "sourceType": "simple.alert.client.spring.boot.AlertConfig",
+      "description": "告警配置"
+    }
+  ],
+  "properties": [
+    {
+      "name": "simple.alert.prototype",
+      "type": "java.lang.String",
+      "sourceType": "simple.alert.client.spring.boot.AlertConfig$httpUrl",
+      "description": "远程请求地址"
+    },
+    {
+      "name": "simple.alert.prototype",
+      "type": "java.lang.Boolean",
+      "sourceType": "simple.alert.client.spring.boot.AlertConfig$isReport",
+      "description": "是否上报"
+    }
+  ]
+}

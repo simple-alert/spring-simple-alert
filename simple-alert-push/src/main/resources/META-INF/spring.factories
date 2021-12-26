@@ -1,0 +1,5 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  simple.alert.push.AlertPushConfig,\
+  simple.alert.push.component.DingDingComponent,\
+  simple.alert.push.service.DingPushService,\
+  simple.alert.push.handler.AlertPushHandler

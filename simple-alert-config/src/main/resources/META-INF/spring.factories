@@ -1,0 +1,5 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  simple.alert.config.AlertConfig,\
+  simple.alert.config.properties.AlertWebhookPushProperties,\
+  simple.alert.config.properties.AlertPushModeProperties,\
+  simple.alert.config.AlertConfigHandler

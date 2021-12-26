@@ -1,0 +1,36 @@
+{
+  "groups": [
+    {
+      "name": "simple.alert.config",
+      "type": "simple.alert.config.properties.AlertProperties",
+      "sourceType": "simple.alert.config.properties.AlertProperties",
+      "description": "告警配置"
+    },
+    {
+      "name": "simple.alert.config.push",
+      "type": "simple.alert.config.properties.AlertWebhookPushProperties",
+      "sourceType": "simple.alert.config.properties.AlertWebhookPushProperties",
+      "description": "告警推送配置"
+    },
+    {
+      "name": "simple.alert.config.push.webhook",
+      "type": "simple.alert.config.properties.AlertWebhookPushProperties",
+      "sourceType": "simple.alert.config.properties.AlertWebhookPushProperties",
+      "description": "告警webhook推送配置"
+    }
+  ],
+  "properties": [
+    {
+      "name": "simple.alert.config.push.mode",
+      "type": "java.lang.String",
+      "sourceType": "simple.alert.config.properties.AlertPushModeProperties$mode",
+      "description": "推送模式"
+    },
+    {
+      "name": "simple.alert.config.push.webhook.token",
+      "type": "java.lang.String",
+      "sourceType": "simple.alert.config.properties.AlertWebhookPushProperties$token",
+      "description": "钉钉推送token"
+    }
+  ]
+}

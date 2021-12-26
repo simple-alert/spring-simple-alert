@@ -1,0 +1,13 @@
+server:
+  port: 8000
+spring:
+  application:
+    name: simple-alert-eruaka
+eureka:
+  instance:
+    hostname: localhost
+  server:
+    eviction-interval-timer-in-ms: 4000
+  client:
+    register-with-eureka: false
+    fetch-registry: false

@@ -1,0 +1,37 @@
+{
+  "groups": [
+    {
+      "name": "simple.alert.remote",
+      "type": "simple.alert.config.properties.AlertProperties",
+      "sourceType": "simple.alert.config.properties.AlertProperties",
+      "description": "告警配置"
+    }
+  ],
+  "properties": [
+    {
+      "name": "simple.alert.remote.mode",
+      "type": "java.lang.String",
+      "sourceType": "simple.alert.config.properties.AlertProperties$mode",
+      "description": "模式",
+      "defaultValue": "original"
+    },
+    {
+      "name": "simple.alert.remote.serviceName",
+      "type": "java.lang.String",
+      "sourceType": "simple.alert.config.properties.AlertProperties$serviceName",
+      "description": "服务名"
+    },
+    {
+      "name": "simple.alert.remote.httpUrl",
+      "type": "java.lang.String",
+      "sourceType": "simple.alert.config.properties.AlertProperties$httpUrl",
+      "description": "远程请求地址"
+    },
+    {
+      "name": "simple.alert.remote.report",
+      "type": "java.lang.String",
+      "sourceType": "simple.alert.config.properties.AlertProperties$report",
+      "description": "远程请求地址"
+    }
+  ]
+}

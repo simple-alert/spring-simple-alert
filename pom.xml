@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.simple.alert</groupId>
+    <artifactId>simple-alert</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0</version>
+
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.compilerVersion>1.8</maven.compiler.compilerVersion>
+        <fastjson.version>1.2.75</fastjson.version>
+        <javax.servlet.version>3.1.0</javax.servlet.version>
+        <junit.version>4.12</junit.version>
+        <org.apache.commons.version>3.5</org.apache.commons.version>
+        <hutool.all.version>5.7.18</hutool.all.version>
+        <fastjosn-version>1.2.47</fastjosn-version>
+    </properties>
+    <modules>
+        <module>simple-alert-client</module>
+        <module>simple-alert-remote</module>
+        <module>simple-alert-core</module>
+        <module>simple-alert-admin</module>
+        <module>simple-alert-metadata</module>
+        <module>simple-alert-example</module>
+        <module>simple-alert-eruaka</module>
+        <module>simple-alert-push</module>
+        <module>simple-alert-config</module>
+    </modules>
+
+
+</project>

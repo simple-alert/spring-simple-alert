@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.simple.alert.remote.spring.boot.web.mapper.AlertLogMapper">
+    <resultMap id="BaseResultMap" type="org.simple.alert.remote.spring.boot.web.model.AlertLog">
+        <!--@mbg.generated-->
+        <!--@Table t_auth_ad-->
+        <id column="id" jdbcType="BIGINT" property="id"/>
+        <result column="create_date" jdbcType="VARCHAR" property="createDate"/>
+        <result column="log_data" jdbcType="INTEGER" property="logData"/>
+        <result column="alert_event_name" jdbcType="VARCHAR" property="url"/>
+        <result column="thread_id" jdbcType="VARCHAR" property="threadId"/>
+        <result column="thread_name" jdbcType="TIMESTAMP" property="threadName"/>
+        <result column="host" jdbcType="TIMESTAMP" property="host"/>
+        <result column="port" jdbcType="INTEGER" property="port"/>
+        <result column="url" jdbcType="INTEGER" property="url"/>
+        <result column="body" jdbcType="BIGINT" property="body"/>
+        <result column="cookies" jdbcType="VARCHAR" property="cookies"/>
+        <result column="requestParams" jdbcType="TIMESTAMP" property="requestParams"/>
+        <result column="requestHeader" jdbcType="BIGINT" property="requestHeader"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@mbg.generated-->
+        id, `create_date`, log_data, alert_event_name, thread_id, thread_name, host, port, url, body,
+        cookies, requestParams, requestHeader
+    </sql>
+</mapper>
